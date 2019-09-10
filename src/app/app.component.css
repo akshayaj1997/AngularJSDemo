@@ -26,3 +26,9 @@ nav a:hover {
 nav a.active {
   color: #039be5;
 }
+button 
+{
+  border-radius: 5px;
+  padding: 5px;
+  background-color: #eee;
+}

@@ -4,4 +4,7 @@
     <a routerLink="/dashboard">Dashboard</a>
 </nav>
 <router-outlet></router-outlet>
-<app-messages></app-messages>
+
+<app-messages *ngIf="!isOn"></app-messages>
+<button pButton label="messages" (click)="isOn= true">Hide Messages</button> &nbsp;
+<button pButton label="messages" (click)="isOn= false">Show Messages</button>
